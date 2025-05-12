@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 150px;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-gambar {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+.contact-us {
+    margin-top: 50px;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
