@@ -19,48 +19,114 @@
     </header>
 
     <main>
+        
         <div id="home">
-            <h1>Penuhi kebutuhan rumah anda di <br> Warung Wakiki</h1>
+            <article>
+                <h1>Penuhi kebutuhan rumah anda di <br> Warung Wakiki</h1>
+            </article>
 
-            <div class="slide-gambar">
-                <img src="img/Logo Warung Wakiki.png" alt="">
+            <div class="box">    
+                
+                <div class="slide-gambar">
+                    
+                    <!-- Kontainer Slideshow -->
+                    <div class="slideshow-container">
+
+                    <!-- Gambar Full-width dengan angka dan caption -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/Banner Miss Clean.png" style="width:100%">
+                        <div class="text">Miss Clean</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/Banner Ryoki.png" style="width:100%">
+                        <div class="text">Ryoki Skincare</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/Logo Warung Wakiki.png" style="width:100%">
+                        <div class="text">Peralatan Dapur</div>
+                    </div>
+
+                    <!-- Tombol Next dan previous -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- Dots/circles -->
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                    <p>Kami menyediakan berbagai produk rumah tangga, dapur, elektronik, produk kesehatan , mainan untuk anak dan lain-lain.</p>
+                </div>
+            
+                <aside>
+                    <section class="contact-us">
+                        <h3>Contact Us</h3>
+                        <p>Kami akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+                            <label for="name">Nama</label>
+                            <input type="text" name="name" id="name" placeholder="Masukkan nama anda">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Masukkan e-mail anda">
+                            <label for="question">Pertanyaan / Pesan</label>
+                            <input type="textarea" name="question" id="question" placeholder="Masukkan pertanyaan / pesan anda">
+                    
+                            <input type="submit" value="Kirim">
+                        </form>
+                    </section>
+                </aside>
             </div>
 
-            <section class="contact-us">
-                <h3>Contact Us</h3>
-                <p>Kami akan menghubungi anda 1x24 jam setelah data kami terima</p>
-            </section>
         </div>
+        
 
         <div id="our-package">
-            <h1>Our Package</h1>
+            <h1>Kami menyediakan berbagai kebutuhan ruamh tangga dari berbagai merek</h1>
             <ul>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
-                <li>fdgfdsgdfgfd</li>
+                <li>Miss Clean</li>
+                <li>Ryoki Skincare</li>
+                <li>Madu Ghaaliya</li>
+                <li>Rumah Tangga</li>
+                <li>Dapur</li>
+                <li>Kesehatan</li>
+                <li>Elektronik</li>
+                <li>Pertukangan </li>
+                <li>Otomotif</li>
             </ul>
+            <h4>Dan lain-lain...</h4>
         </div>
 
         <div id="call-us">
             <h1>Pengen tau pesan di mana?</h1>
-            <p>dnfjksdahjgfksdhgfjkdshgfkjdsfhagkasd</p>
+            <p>Cek marketplace kami</p>
+            <button>Tokopedia</button>
+            <button>Shopee</button>
             <button>Hubungi kami</button>
         </div>
     </main>
 
     <footer>
+        <div class="social-media">
+            <a href="">Tokopedia</a>
+            <a href="">Shopee</a>
+            <a href="">Whatsapp</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+        </div>
 
+        <div class="footer-text">
+            <p>Terms of Servide</p>
+            <p>Privacy Policy</p>
+            <p>Warung Wakiki</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
