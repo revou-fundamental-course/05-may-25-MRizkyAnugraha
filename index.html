@@ -1,134 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Warung Wakiki</title>
-    <link rel="icon" type="image/x-icon" href="img/Favicon Warung Wakiki.png">
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
-    <header class="nav">       
-        <img id="logo" src="img/Logo Warung Wakiki.png" alt="Logo Warung Wakiki"/>
-        <div class="menu">
-            <nav><a href="#home">Home</a></nav>
-            <nav><a href="#our-package">Our Package</a></nav>
-            <nav><a href="#call-us">Call Us</a></nav>
-        </div>
+
+    <link rel="icon" type="image/x-icon" href="img/Favicon Warung Wakiki.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="img/Logo Warung Wakiki.png"
+        alt="Logo Warung Wakiki"
+      />
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#category">Category</a></li>
+          <li><a href="#call-us">Call Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        
-        <div id="home">
-            <article>
-                <h1>Penuhi kebutuhan rumah anda di <br> Warung Wakiki</h1>
-            </article>
+      <div id="home">
+        <article>
+          <h1>
+            Penuhi Kebutuhan Rumah Anda di <br />
+            Warung Wakiki
+          </h1>
+        </article>
 
-            <div class="box">    
-                
-                <div class="slide-gambar">
-                    
-                    <!-- Kontainer Slideshow -->
-                    <div class="slideshow-container">
+        <div class="box">
+          <div class="slide-gambar">
+            <!-- Kontainer Slideshow -->
+            <div class="slideshow-container">
+              <!-- Gambar Full-width dengan angka dan caption -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/Banner Miss Clean.png" style="width: 100%" />
+                <div class="text">Miss Clean</div>
+              </div>
 
-                    <!-- Gambar Full-width dengan angka dan caption -->
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="img/Banner Miss Clean.png" style="width:100%">
-                        <div class="text">Miss Clean</div>
-                    </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/Banner Ryoki.png" style="width: 100%" />
+                <div class="text">Ryoki Skincare</div>
+              </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="img/Banner Ryoki.png" style="width:100%">
-                        <div class="text">Ryoki Skincare</div>
-                    </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/Logo Warung Wakiki.png" style="width: 100%" />
+                <div class="text">Peralatan Dapur</div>
+              </div>
 
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="img/Logo Warung Wakiki.png" style="width:100%">
-                        <div class="text">Peralatan Dapur</div>
-                    </div>
+              <!-- Tombol Next dan previous -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
 
-                    <!-- Tombol Next dan previous -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-
-                    <!-- Dots/circles -->
-                    <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-
-                    <p>Kami menyediakan berbagai produk rumah tangga, dapur, elektronik, produk kesehatan , mainan untuk anak dan lain-lain.</p>
-                </div>
-            
-                <aside>
-                    <section class="contact-us">
-                        <h3>Contact Us</h3>
-                        <p>Kami akan menghubungi anda 1x24 jam setelah data kami terima</p>
-                        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
-                            <label for="name">Nama</label>
-                            <input type="text" name="name" id="name" placeholder="Masukkan nama anda">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="Masukkan e-mail anda">
-                            <label for="question">Pertanyaan / Pesan</label>
-                            <input type="textarea" name="question" id="question" placeholder="Masukkan pertanyaan / pesan anda">
-                    
-                            <input type="submit" value="Kirim">
-                        </form>
-                    </section>
-                </aside>
+            <!-- Dots/circles -->
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-        </div>
-        
+            <p>
+              Kami menyediakan berbagai produk rumah tangga, dapur, elektronik,
+              produk kesehatan, mainan untuk anak dan lain-lain. Kunjungi
+              marketplace kami di shopee dan tokopedia. Jangan lupa pantau terus
+              social media kami untuk info terbaru.
+            </p>
+          </div>
 
-        <div id="our-package">
-            <h1>Kami menyediakan berbagai kebutuhan ruamh tangga dari berbagai merek</h1>
-            <ul>
-                <li>Miss Clean</li>
-                <li>Ryoki Skincare</li>
-                <li>Madu Ghaaliya</li>
-                <li>Rumah Tangga</li>
-                <li>Dapur</li>
-                <li>Kesehatan</li>
-                <li>Elektronik</li>
-                <li>Pertukangan </li>
-                <li>Otomotif</li>
-            </ul>
-            <h4>Dan lain-lain...</h4>
-        </div>
+          <aside>
+            <section class="contact-us">
+              <h3>Contact Us</h3>
+              <p>
+                Kami akan menghubungi anda 1x24 jam setelah data kami terima
+              </p>
+              <form
+                name="myForm"
+                action=""
+                onsubmit="return validateForm()"
+                method="post"
+              >
+                <label for="name">Nama</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Masukkan nama anda"
+                />
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Masukkan e-mail anda"
+                />
+                <label for="question">Pertanyaan / Pesan</label>
+                <input
+                  type="textarea"
+                  name="question"
+                  id="question"
+                  placeholder=""
+                />
 
-        <div id="call-us">
-            <h1>Pengen tau pesan di mana?</h1>
-            <p>Cek marketplace kami</p>
-            <button>Tokopedia</button>
-            <button>Shopee</button>
-            <button>Hubungi kami</button>
+                <input type="submit" value="Kirim" />
+              </form>
+            </section>
+          </aside>
         </div>
+      </div>
+
+      <div id="category">
+        <h1>
+          Kami menyediakan berbagai kebutuhan rumah tangga dari berbagai merek
+        </h1>
+
+        <ul>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Miss Clean</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Ryoki Skincare</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Madu Ghaaliya</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Rumah Tangga</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Dapur</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Kesehatan</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Elektronik</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Pertukangan</li>
+          <li><img src="img/Logo Warung Wakiki.png" alt="">Otomotif</li>
+        </ul>
+        <h4>Dan lain-lain...</h4>
+      </div>
+
+      <hr>
+
+      <div id="call-us">
+        <h1>Pengen tau pesan di mana?</h1>
+        <h3>Cek marketplace kami</h3>
+        <div class="visit-us">
+          <a href="https://www.tokopedia.com/warung-wakiki"
+            ><button>Tokopedia</button></a
+          >
+          <a href="https://shopee.co.id/warungwakiki"
+            ><button>Shopee</button></a
+          >
+          <a href="https://wa.me/c/6281917041264"
+            ><button>Hubungi kami</button></a
+          >
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="social-media">
-            <a href="">Tokopedia</a>
-            <a href="">Shopee</a>
-            <a href="">Whatsapp</a>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
-        </div>
+      <div class="social-media">
+        <!-- Tokopedia -->
+        <a href="https://www.tokopedia.com/warung-wakiki">
+          <?xml version="1.0" ?>
+          <svg viewBox="10 10 45 50" xmlns="http://www.w3.org/2000/svg" height="45px" width="45px">
+            <title />
+            <g data-name="Outline asal" id="Outline_asal">
+              <path
+                d="M36,47H20a1,1,0,0,1-1-1V24a1,1,0,0,1,1-1h7.875A10.0517,10.0517,0,0,1,32,23.8906,10.0517,10.0517,0,0,1,36.125,23H44a1,1,0,0,1,1,1V38A9.01,9.01,0,0,1,36,47ZM21,45H36a7.0085,7.0085,0,0,0,7-7V25H36.125a8.0416,8.0416,0,0,0-3.5781.8447l-.1.05a1.0008,1.0008,0,0,1-.8946,0l-.1-.05A8.0416,8.0416,0,0,0,27.875,25H21Z"
+              />
+              <path
+                d="M27.5,38A5.5,5.5,0,1,1,33,32.5,5.5069,5.5069,0,0,1,27.5,38Zm0-9A3.5,3.5,0,1,0,31,32.5,3.5042,3.5042,0,0,0,27.5,29Z"
+              />
+              <path
+                d="M36.5,38A5.5,5.5,0,1,1,42,32.5,5.5069,5.5069,0,0,1,36.5,38Zm0-9A3.5,3.5,0,1,0,40,32.5,3.5042,3.5042,0,0,0,36.5,29Z"
+              />
+              <circle cx="36" cy="32.5" r="1" />
+              <path
+                d="M36,34.5a2,2,0,1,1,2-2A2.0027,2.0027,0,0,1,36,34.5Zm0-2.002v0Z"
+              />
+              <circle cx="28" cy="32.5" r="1" />
+              <path
+                d="M28,34.5a2,2,0,1,1,2-2A2.0027,2.0027,0,0,1,28,34.5Zm0-2.002v0Z"
+              />
+              <path
+                d="M32,41a.9967.9967,0,0,1-.707-.293l-2-2A.9993.9993,0,0,1,29,38a3,3,0,0,1,6,0,.9993.9993,0,0,1-.293.707l-2,2A.9967.9967,0,0,1,32,41Zm-.9365-3.3506L32,38.5859l.9365-.9365a1,1,0,0,0-1.873,0Z"
+              />
+              <path d="M38,24H36V23a4,4,0,0,0-8,0v1H26V23a6,6,0,0,1,12,0Z" />
+              <path
+                d="M49,54H15a5.0059,5.0059,0,0,1-5-5V15a5.0059,5.0059,0,0,1,5-5H49a5.0059,5.0059,0,0,1,5,5V49A5.0059,5.0059,0,0,1,49,54ZM15,12a3.0033,3.0033,0,0,0-3,3V49a3.0033,3.0033,0,0,0,3,3H49a3.0033,3.0033,0,0,0,3-3V15a3.0033,3.0033,0,0,0-3-3Z"
+              />
+            </g>
+          </svg>
+          <!-- Tokopedia -->
+        </a>
 
-        <div class="footer-text">
-            <p>Terms of Servide</p>
-            <p>Privacy Policy</p>
-            <p>Warung Wakiki</p>
-        </div>
+        <!-- Shopee -->
+        <a href="https://shopee.co.id/warungwakiki">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="40px"
+            height="40px"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 25.080078 18 C 28.920078 18 31.799062 20.060938 32.039062 20.210938 L 31.009766 21.880859 C 30.759766 21.710859 30.310625 21.439844 30.140625 21.339844 C 29.120625 20.789844 27.240078 19.970703 25.080078 19.970703 C 21.830078 19.970703 19.480469 21.77 19.480469 24.25 C 19.480469 26.72 21.660234 27.699766 25.240234 29.009766 C 28.870234 30.329766 32.970703 31.829609 32.970703 36.599609 C 32.970703 40.189609 29.430156 43.009766 24.910156 43.009766 C 20.920156 43.009766 17.640078 40.560156 16.830078 39.910156 L 17.939453 38.259766 C 17.969453 38.289766 21.160156 41.029297 24.910156 41.029297 C 28.270156 41.029297 31 39.039609 31 36.599609 C 31 33.439609 28.570547 32.319375 24.560547 30.859375 C 21.260547 29.649375 17.509766 28.28 17.509766 24.25 C 17.509766 20.69 20.760078 18 25.080078 18 z"
+            ></path>
+          </svg>
+          <!-- Shopee -->
+        </a>
+
+        <!-- Whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=6281917041264">
+          <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+          <svg
+            height="40px"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            "
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:serif="http://www.serif.com/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z"
+            />
+          </svg>
+          <!-- Whatsapp -->
+        </a>
+
+        <!-- Instagram    -->
+        <a href="https://www.instagram.com/warungwakiki?igsh=b28zZjh2NXFyMGJs">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 5 56.7 56.7"
+            enable-background="new 0 0 56.7 56.7"
+            xml:space="preserve"
+            height="50px"
+          >
+            <g>
+              <path
+                d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                        c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"
+              />
+              <circle cx="41.5" cy="16.4" r="2.9" />
+              <path
+                d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                        h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                        s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                        c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"
+              />
+            </g>
+          </svg>
+          <!-- Instagram -->
+        </a>
+
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/profile.php?id=61571634421834&mibextid=ZbWKwL"
+        >
+          <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+          <svg
+            height="40px"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            "
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:serif="http://www.serif.com/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"
+            />
+          </svg>
+          <!-- Facebook -->
+        </a>
+      </div>
+
+      <div class="footer-text">
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <p>Warung Wakiki</p>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
