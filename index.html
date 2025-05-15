@@ -8,15 +8,31 @@
 
     <link rel="icon" type="image/x-icon" href="img/Favicon Warung Wakiki.png" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Get your own code at fontawesome.com-->
   </head>
   <body>
     <header>
+      <!-- Logo -->
       <img
         id="logo"
         src="img/Logo Warung Wakiki.png"
         alt="Logo Warung Wakiki"
       />
 
+      <!-- Navigasi menu -->
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -29,7 +45,7 @@
     <main>
       <div id="home">
         <article>
-          <h1>
+          <h1 class="sour-gummy-title">
             Penuhi Kebutuhan Rumah Anda di <br />
             Warung Wakiki
           </h1>
@@ -54,7 +70,10 @@
 
               <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="img/Banner Produk Rumah Tangga.png" style="width: 100%" />
+                <img
+                  src="img/Banner Produk Rumah Tangga.png"
+                  style="width: 100%"
+                />
                 <div class="text">Produk Rumah Tangga</div>
               </div>
 
@@ -79,6 +98,7 @@
             </p>
           </div>
 
+          <!-- Form contact us -->
           <aside>
             <section class="contact-us">
               <h3>Contact Us</h3>
@@ -89,7 +109,7 @@
                 name="myForm"
                 action=""
                 onsubmit="return validateForm()"
-                method="post"
+                method=""
               >
                 <label for="name">Nama</label>
                 <input
@@ -121,32 +141,48 @@
       </div>
 
       <div id="category">
-        <h1>
+        <h1 class="sour-gummy-title">
           Kami menyediakan berbagai kebutuhan rumah tangga dari berbagai merek
         </h1>
-
+        <!-- Kategori produk -->
         <ul>
-          <li><img src="img/Logo Miss Clean.png" alt="Miss Clean">Miss Clean</li>
-          <li><img src="img/Logo Ryoki.png" alt="Ryoki Skinc">Ryoki Skincare</li>
-          <li><img src="img/Logo Madu Ghaaliya.webp" alt="Madu Ghaaliya">Madu Ghaaliya</li>
-          <li><img src="img/Logo Rumah Tangga.jpg" alt="Rumah Tangga">Rumah Tangga</li>
-          <li><img src="img/Logo Dapur.png" alt="Dapur">Dapur</li>
-          <li><img src="img/Logo Kesehatan.png" alt="Kesehatan">
+          <li>
+            <img src="img/Logo Miss Clean.png" alt="Miss Clean" />Miss Clean
+          </li>
+          <li>
+            <img src="img/Logo Ryoki.png" alt="Ryoki Skinc" />Ryoki Skincare
+          </li>
+          <li>
+            <img src="img/Logo Madu Ghaaliya.webp" alt="Madu Ghaaliya" />Madu
+            Ghaaliya
+          </li>
+          <li>
+            <img src="img/Logo Rumah Tangga.jpg" alt="Rumah Tangga" />Rumah
+            Tangga
+          </li>
+          <li><img src="img/Logo Dapur.png" alt="Dapur" />Dapur</li>
+          <li>
+            <img src="img/Logo Kesehatan.png" alt="Kesehatan" />
             Kesehatan
             <!-- Image by pngtree.com -->
           </li>
-          <li><img src="img/Logo Elektronik.png" alt="Elektronik">Elektronik</li>
-          <li><img src="img/Logo Pertukangan.png" alt="Pertukangan">Pertukangan</li>
-          <li><img src="img/Logo Otomotif.png" alt="Otomotif">Otomotif</li>
+          <li>
+            <img src="img/Logo Elektronik.png" alt="Elektronik" />Elektronik
+          </li>
+          <li>
+            <img src="img/Logo Pertukangan.png" alt="Pertukangan" />Pertukangan
+          </li>
+          <li><img src="img/Logo Otomotif.png" alt="Otomotif" />Otomotif</li>
         </ul>
-        <h4>Dan lain-lain...</h4>
+        <h4 class="sour-gummy-subjudul">Dan lain-lain...</h4>
       </div>
 
-      <hr>
+      <hr />
 
+      <!-- tombol marketplace -->
       <div id="call-us">
-        <h1>Pengen tau pesan di mana?</h1>
-        <h3>Cek marketplace kami</h3>
+        <h1 class="sour-gummy-title">Pengen tau pesan di mana?</h1>
+        <h3 class="sour-gummy-subjudul">Cek marketplace kami</h3>
         <div class="visit-us">
           <a href="https://www.tokopedia.com/warung-wakiki"
             ><button>Tokopedia</button></a
@@ -159,14 +195,31 @@
           >
         </div>
       </div>
+
+      <!-- Button back to top -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path
+            fill="#FFFFFF"
+            d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"
+          />
+        </svg>
+      </button>
     </main>
 
     <footer>
+      <!-- Link social media dan marketplace -->
       <div class="social-media">
         <!-- Tokopedia -->
         <a href="https://www.tokopedia.com/warung-wakiki">
           <?xml version="1.0" ?>
-          <svg viewBox="10 10 45 50" xmlns="http://www.w3.org/2000/svg" height="45px" width="45px">
+          <svg
+            viewBox="10 10 45 50"
+            xmlns="http://www.w3.org/2000/svg"
+            height="45px"
+            width="45px"
+          >
             <title />
             <g data-name="Outline asal" id="Outline_asal">
               <path
